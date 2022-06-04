@@ -36,7 +36,7 @@ dependencies {
 }
 
 bootJar{
-    archiveBaseName= '-'
-    archiveFileName= '-.jar'
+    archiveBaseName= 'dy-springboot2-webservice'
+    archiveFileName= 'dy-springboot2-webservice.jar'
     archiveVersion= '1.0-SNAPSHOT'
 }
