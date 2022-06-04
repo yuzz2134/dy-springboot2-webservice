@@ -25,6 +25,16 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa') //추상화 라이브러리
+    compile('com.h2database:h2')                                     //인메모리 관계형 데이터베이스(의존성만으로 관리가능)
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client') //클라이언트입장에서 소셜로그인 기능 구현시 필요한 의존성, -client와 -jose를 기본으로 관리
+    compile('org.springframework.session:spring-session-jdbc')
+    testCompile('org.springframework.security:spring-security-test') //스프링시큐리티 테스트를 위한 여러도구 지원
 }
 
+bootJar{
+    mainClassName = 'com.sbaws.book.springboot.Application'
+}
