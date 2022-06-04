@@ -36,7 +36,7 @@ dependencies {
     compile("org.mariadb.jdbc:mariadb-java-client")
     testCompile('org.springframework.security:spring-security-test') //스프링시큐리티 테스트를 위한 여러도구 지원
 }
-
+/*
 tasks.jar {
     enabled = false
 }
@@ -45,3 +45,4 @@ tasks.bootJar {
     enabled = true
     mainClassName = 'com.sbaws.book.springboot.Application'
 }
+*/
