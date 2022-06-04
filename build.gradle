@@ -35,6 +35,7 @@ dependencies {
     testCompile('org.springframework.security:spring-security-test') //스프링시큐리티 테스트를 위한 여러도구 지원
 }
 
-bootJar{
-    mainClass = 'com.sbaws.book.springboot'
+tasks.getByName<BootJar>("bootJar") {
+    enabled = true
+    mainClassName = 'com.sbaws.book.springboot.Application'
 }
