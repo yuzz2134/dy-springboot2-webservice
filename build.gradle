@@ -36,5 +36,5 @@ dependencies {
 }
 
 bootJar{
-    mainClassName = 'com.sbaws.book.springboot.Application'
+    mainClassName = 'com.sbaws.book.springboot'
 }
