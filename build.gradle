@@ -36,7 +36,5 @@ dependencies {
 }
 
 bootJar{
-    archiveBaseName = 'dy-springboot2-webservice'
-    archiveFileName = 'dy-springboot2-webservice.jar'
-    archiveVersion = '1.0-SNAPSHOT'
+    mainClass = 'com.sbaws.book.springboot.Application'
 }
