@@ -36,5 +36,7 @@ dependencies {
 }
 
 bootJar{
-    mainClassName = 'com.sbaws.book.springboot.Application'
+    archiveBaseName= '-'
+    archiveFileName= '-.jar'
+    archiveVersion= '1.0-SNAPSHOT'
 }
