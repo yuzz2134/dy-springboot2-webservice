@@ -34,3 +34,7 @@ dependencies {
     compile('org.springframework.session:spring-session-jdbc')
     testCompile('org.springframework.security:spring-security-test') //스프링시큐리티 테스트를 위한 여러도구 지원
 }
+
+bootJar{
+    mainClassName = 'com.sbaws.book.springboot.Application'
+}
