@@ -12,6 +12,8 @@ import javax.persistence.*;
 @Entity
 public class User extends BaseTimeEntity {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long Id;
@@ -38,6 +40,8 @@ public class User extends BaseTimeEntity {
         this.picture = picture;
         this.role = role;
     }
+
+    public User() {}
 
     public User update(String name, String picture){
         this.name = name;
