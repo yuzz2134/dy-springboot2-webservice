@@ -8,9 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+//@NoArgsConstructor //-500오류로 제거
 @Entity
 public class User extends BaseTimeEntity {
+
+    public User(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
