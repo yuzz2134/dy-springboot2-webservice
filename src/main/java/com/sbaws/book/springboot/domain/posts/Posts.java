@@ -8,9 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor //기본생성자 자동추가
+//@NoArgsConstructor //기본생성자 자동추가
 @Entity             //엔티티클래스에서는 setter를 만들지 않음
 public class Posts extends BaseTimeEntity {
+
+    public Posts(){}
 
     @Id  //해당 테이블의 pk 필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //pk의 생성규칙 identity옵션을 추가해야 자동증가사용가능
