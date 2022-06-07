@@ -6,8 +6,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@NoArgsConstructor
+//@NoArgsConstructor
 public class PostsSaveRequestDto {
+
+    public PostsSaveRequestDto(){}
+
     private String title;
     private String content;
     private String author;
