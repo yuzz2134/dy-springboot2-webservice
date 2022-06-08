@@ -5,9 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-//@NoArgsConstructor
+@NoArgsConstructor
 public class PostsUpdateRequestDto {
-    public PostsUpdateRequestDto(){}
     private String title;
     private String content;
 

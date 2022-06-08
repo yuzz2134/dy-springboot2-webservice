@@ -4,7 +4,6 @@ buildscript{
     }
     repositories{
         mavenCentral()
-        jcenter()
     }
     dependencies{
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -21,12 +20,10 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-tomcat')
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa') //추상화 라이브러리
     compile('com.h2database:h2')                                     //인메모리 관계형 데이터베이스(의존성만으로 관리가능)
